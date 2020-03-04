@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="jsScripts.js"></script>
+    <title>Seguro No Pagamos</title>
+  </head>
+  <body>
+    <div class="tp-content">
+      <h1>Cooperativa Seguro No Pagamos</h1>
+      <h3>Formulario de Contacto</h3>
+      <small
+        >Complete el formulario con sus datos y un asesor nunca le responderá
+      </small>
+      <div class="form-container">
+        <form onsubmit="submitHandler(event)">
+          <div class="form-grid">
+            <div class="column-1-3">
+              <div class="form-group">
+                <label for="name">Nombre</label>
+                <input class="form-item" type="text" name="name" />
+              </div>
+            </div>
+            <div class="column-3-5">
+              <div class="form-group">
+                <label for="lastname">Apellido</label>
+                <input class="form-item" type="text" name="lastname" />
+              </div>
+            </div>
+            <div class="column-1-5">
+              <div class="form-group">
+                <label for="dni">DNI</label>
+                <input class="form-item" type="text" name="dni" />
+              </div>
+            </div>
+            <div class="column-1-3">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  class="form-item"
+                  type="text"
+                  name="email"
+                  placeholder="email@example.com"
+                />
+              </div>
+            </div>
+            <div class="column-3-5">
+              <div class="form-group">
+                <label for="tel">Telefono</label>
+                <input class="form-item" type="text" name="tel" />
+              </div>
+            </div>
+            <div class="column-1-5">
+              <div class="form-group">
+                <label for="secureType">Tipo de Seguro</label>
+                <select class="form-item" name="secureType">
+                  <option selected>Seleccione...</option>
+                  <option value="basic">Basico</option>
+                  <option value="intermediate">Intermedio</option>
+                  <option value="premium">Premium</option>
+                </select>
+                <small>
+                  * Al menos un tipo de seguro debe ser seleccionado para su
+                  cotizacion
+                </small>
+              </div>
+            </div>
+            <div class="column-1-2">
+              <input id="submitBtn" type="submit" class="button submit" />
+            </div>
+            <div class="column-2-3">
+              <input type="reset" class="button reset" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
