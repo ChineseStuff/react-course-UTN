@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+.grid-container {
+  width: auto;
+  height: 100%;
+  display: grid;
+  border: 1px solid #1e1e1e;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "result result result result"
+    "add subtract multiply divide"
+    "input-1 input-1 input-1 equals"
+    "input-2 input-2 input-2 equals"
+    "clear clear clear equals"
+    "dev dev dev dev";
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3e3e3e;
+  color: #fff;
+  border: 1px solid #000;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.result {
+  background-color: #fff;
+  grid-area: result;
+  color: #000;
+  height: 115px;
+}
+.add {
+  grid-area: add;
+}
+.subtract {
+  grid-area: subtract;
+}
+.multiply {
+  grid-area: multiply;
+}
+.divide {
+  grid-area: divide;
+}
+
+.add,
+.subtract,
+.multiply,
+.divide {
+  width: 80px;
+  height: 80px;
+}
+
+.add:hover,
+.subtract:hover,
+.multiply:hover,
+.divide:hover,
+.equals:hover,
+.clear:hover {
+  cursor: pointer;
+  background-color: #4c1bce;
+}
+
+.input-1 {
+  grid-area: input-1;
+  height: 80px;
+}
+.input-2 {
+  grid-area: input-2;
+  height: 80px;
+}
+.equals {
+  grid-area: equals;
+}
+.clear {
+  grid-area: clear;
+  height: 80px;
+  font-size: 1.2rem;
+}
+.dev {
+  grid-area: dev;
+  height: 40px;
+  font-size: 1.2rem;
+  color: #7eacc2;
+}
+
+.dev a {
+  color: #7eacc2;
+  text-decoration: none;
+}
